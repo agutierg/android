@@ -106,7 +106,7 @@ public class ModificarEquipo extends Activity implements AdListener {
 		setContentView(R.layout.activity_modificar_equipo);
 
 		baseDatosComunio = new PuntosComunioSQLite(this, "DBComunioPuntos",
-				null, 9);
+				null, 10);
 
 		contexto = this;
 

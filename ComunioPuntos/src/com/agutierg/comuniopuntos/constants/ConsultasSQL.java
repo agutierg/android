@@ -157,6 +157,8 @@ public class ConsultasSQL {
 
 	public static final String DELETE_ATLETICO_Demichelis = "DELETE FROM Futbolista WHERE nombreFut = 'Demichelis'";
 	public static final String DELETE_ATLETICO_Leandro_Cabrera = "DELETE FROM Futbolista WHERE nombreFut = 'Leandro Cabrera'";
+	public static final String DELETE_ATLETICO_Alderweireld = "DELETE FROM Futbolista WHERE nombreFut = 'Alderweireld'";
+	public static final String DELETE_ATLETICO_Guilavogui = "DELETE FROM Futbolista WHERE nombreFut = 'Guilavogui'";
 
 	// Inserts en la tabla Futbolista para el BARCELONA
 	public static final String INSERT_BARCELONA_OIER = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Oier Olazábal',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
@@ -425,11 +427,14 @@ public class ConsultasSQL {
 
 	public static final String INSERT_ESPANOL_Torje = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Torje',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
 			+ ConstantesParametros.EQUIPO_SEL_ESPANOL + "'),'500.000','DEL')";
+	public static final String INSERT_ESPANOL_Jhon_Cordoba = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Jhon Córdoba',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
+			+ ConstantesParametros.EQUIPO_SEL_ESPANOL + "'),'500.000','DEL')";
 
 	public static final String DELETE_ESPANOL_CHRISTIAN_ALF = "DELETE FROM Futbolista WHERE nombreFut = 'Christian Alfonso'";
 	public static final String DELETE_ESPANOL_Wakaso = "DELETE FROM Futbolista WHERE nombreFut = 'Wakaso'";
 	public static final String DELETE_ESPANOL_Albin = "DELETE FROM Futbolista WHERE nombreFut = 'Albín'";
 	public static final String DELETE_ESPANOL_CRISTIAN_GOMEZ = "DELETE FROM Futbolista WHERE nombreFut = 'Cristian Gómez'";
+	public static final String DELETE_ESPANOL_Torje = "DELETE FROM Futbolista WHERE nombreFut = 'Torje'";
 
 	// Inserts en la tabla Futbolista para el GETAFE
 	public static final String INSERT_GETAFE_CODINA = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Codina',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
@@ -538,6 +543,8 @@ public class ConsultasSQL {
 	public static final String DELETE_GRANADA_MIKEL_RICO = "DELETE FROM Futbolista WHERE nombreFut = 'Mikel Rico'";
 	public static final String DELETE_GRANADA_ARANDA = "DELETE FROM Futbolista WHERE nombreFut = 'Aranda'";
 	public static final String DELETE_GRANADA_Douglas_Santos = "DELETE FROM Futbolista WHERE nombreFut = 'Douglas Santos'";
+	public static final String DELETE_GRANADA_M_Pereira = "DELETE FROM Futbolista WHERE nombreFut = 'M. Pereira'";
+	public static final String DELETE_GRANADA_Matias_Campos = "DELETE FROM Futbolista WHERE nombreFut = 'Matías Campos'";
 
 	// Inserts en la tabla Futbolista para el LEVANTE
 	public static final String INSERT_LEVANTE_Javi_Jimenez = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Javi Jiménez',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
@@ -793,6 +800,8 @@ public class ConsultasSQL {
 			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','CEN')";
 	public static final String INSERT_RAYO_TRASHORRAS = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Trashorras',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
 			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','CEN')";
+	public static final String INSERT_RAYO_Jonathan_Viera = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Jonathan Viera',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
+			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','CEN')";
 	public static final String INSERT_RAYO_Bueno = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Bueno',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
 			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','DEL')";
 	public static final String INSERT_RAYO_Larrivey = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Larrivey',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
@@ -806,10 +815,10 @@ public class ConsultasSQL {
 	public static final String INSERT_RAYO_Sebastian_Fernandez = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Sebastián Fernández',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
 			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','DEL')";
 
-	public static final String INSERT_RAYO_Jonathan_Viera = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Jonathan Viera',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
-			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','CEN')";
 	public static final String INSERT_RAYO_Embarba = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Embarba',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
 			+ ConstantesParametros.EQUIPO_SEL_RAYO + "'),'500.000','DEL')";
+
+	public static final String DELETE_RAYO_Embarba = "DELETE FROM Futbolista WHERE nombreFut = 'Embarba'";
 
 	// Inserts en la tabla Futbolista para el REAL MADRID
 	public static final String INSERT_RMADRID_CASILLAS = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Casillas',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"
@@ -868,6 +877,7 @@ public class ConsultasSQL {
 	public static final String DELETE_RMADRID_OZIL = "DELETE FROM Futbolista WHERE nombreFut = 'Özil'";
 	public static final String DELETE_RMADRID_Denis_Cheryshev = "DELETE FROM Futbolista WHERE nombreFut = 'Denis Cheryshev'";
 	public static final String DELETE_RMADRID_KAKA = "DELETE FROM Futbolista WHERE nombreFut = 'Kaká'";
+	public static final String DELETE_RMADRID_Bale = "DELETE FROM Futbolista WHERE nombreFut = 'Bale'";
 
 	// Inserts en la tabla Futbolista para el REAL SOCIEDAD
 	public static final String INSERT_RSOCIEDAD_BRAVO = "INSERT INTO Futbolista (nombreFut,estadoFut,equipoFut,valorFut,posFut) VALUES ('Claudio Bravo',1,(SELECT equId FROM Equipo WHERE aliasEqu = '"

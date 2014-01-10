@@ -75,7 +75,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int versionAnterior,
 			int versionNueva) {
 
-		if (versionAnterior == 8) {
+		if (versionAnterior == 9) {
 
 			// Borramos
 			deleteFutAthlectic(db);
@@ -229,7 +229,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: ATHLETIC
 	 */
 	private void deleteFutAthlectic(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ATHLETIC_INIGOPER);
+
 	}
 
 	/**
@@ -274,7 +274,8 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: ATHLETICO
 	 */
 	private void deleteFutAthlectico(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ATLETICO_Leandro_Cabrera);
+		db.execSQL(ConsultasSQL.DELETE_ATLETICO_Alderweireld);
+		db.execSQL(ConsultasSQL.DELETE_ATLETICO_Guilavogui);
 	}
 
 	/**
@@ -461,7 +462,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: Almeria
 	 */
 	private void deleteFutAlmeria(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ALMERIA_Ruben_Suarez);
+
 	}
 
 	/**
@@ -500,14 +501,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 */
 	private void insertNewFutEspanol(SQLiteDatabase db) {
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Torje);
+		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Jhon_Cordoba);
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: Espanol
 	 */
 	private void deleteFutEspanol(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ESPANOL_Albin);
-		db.execSQL(ConsultasSQL.DELETE_ESPANOL_CRISTIAN_GOMEZ);
+		db.execSQL(ConsultasSQL.DELETE_ESPANOL_Torje);
 	}
 
 	/**
@@ -536,20 +537,21 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_Roberto_Lago);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_Arroyo);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_Lisandro);
+		db.execSQL(ConsultasSQL.INSERT_GETAFE_Ciprian_Marica);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Getafe
 	 */
 	private void insertNewFutGetafe(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_GETAFE_Ciprian_Marica);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: Getafe
 	 */
 	private void deleteFutGetafe(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_GETAFE_Miku);
+
 	}
 
 	/**
@@ -595,8 +597,8 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: Granada
 	 */
 	private void deleteFutGranada(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_GRANADA_Douglas_Santos);
-		db.execSQL(ConsultasSQL.DELETE_GRANADA_ARANDA);
+		db.execSQL(ConsultasSQL.DELETE_GRANADA_M_Pereira);
+		db.execSQL(ConsultasSQL.DELETE_GRANADA_Matias_Campos);
 	}
 
 	/**
@@ -733,7 +735,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: Elche
 	 */
 	private void deleteFutElche(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ELCHE_Beranger);
+
 	}
 
 	/**
@@ -814,13 +816,13 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Iago_Falque);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Sebastian_Fernandez);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Ze_Castro);
+		db.execSQL(ConsultasSQL.INSERT_RAYO_Jonathan_Viera);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Rayo
 	 */
 	private void insertNewFutRayo(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_RAYO_Jonathan_Viera);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Embarba);
 	}
 
@@ -828,7 +830,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: Rayo
 	 */
 	private void deleteFutRayo(SQLiteDatabase db) {
-
+		db.execSQL(ConsultasSQL.DELETE_RAYO_Embarba);
 	}
 
 	/**
@@ -875,10 +877,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: RMadrid
 	 */
 	private void deleteFutRMadrid(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_RMADRID_ADAN);
-		db.execSQL(ConsultasSQL.DELETE_RMADRID_KAKA);
-		db.execSQL(ConsultasSQL.DELETE_RMADRID_OZIL);
-		db.execSQL(ConsultasSQL.DELETE_RMADRID_Denis_Cheryshev);
+		db.execSQL(ConsultasSQL.DELETE_RMADRID_Bale);
 	}
 
 	/**
@@ -964,6 +963,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_CICINHO);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_Iborra);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_MBia);
+		db.execSQL(ConsultasSQL.INSERT_SEVILLA_Denis_Cheryshev);
 	}
 
 	/**
@@ -971,14 +971,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * SEVILLA
 	 */
 	private void insertNewFutSevilla(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_SEVILLA_Denis_Cheryshev);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: SEVILLA
 	 */
 	private void deleteFutSevilla(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_SEVILLA_Guarente);
+
 	}
 
 	/**
@@ -1024,8 +1024,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: VALENCIA
 	 */
 	private void deleteFutValencia(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_VALENCIA_CISSOKHO);
-		db.execSQL(ConsultasSQL.DELETE_VALENCIA_VIERA);
+
 	}
 
 	/**
@@ -1070,7 +1069,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: VALLADOLID
 	 */
 	private void deleteFutValladolid(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_VALLADOLID_Carlos_Lazaro);
+
 	}
 
 	/**
@@ -1115,6 +1114,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: VILLARREAL
 	 */
 	private void deleteFutVillarreal(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_VILLARREAL_Camunas);
+
 	}
 }
