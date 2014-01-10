@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">Mis Periodicos Y Revistas</string>
+
+    <!-- Pagina principal -->
+    <string name="btnMisFav">Mis\nFavoritos</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnSalir">Salir</string>
+    <string name="btnPeriodicos">Periódicos</string>
+    <string name="btnRevistas">Revistas</string>
+    <string name="btnPerDepor">Periódicos Deportivos</string>
+    <string name="btnRevCora">Revistas del Corazón</string>
+    <string name="btnPreExt">Prensa Extranjera</string>
+    <string name="btnRevCien">Revistas Científicas</string>
+
+    <!-- Lista -->
+    <string name="imagenrow">imagenrow</string>
+    <string name="ir">ir</string>
+    <string name="favorito">favorito</string>
+    <string name="nofavorito">nofavorito</string>
+	
+    
+<!--     Visor Web -->
+	<string name="go">Ir</string>
+	<string name="back">Atrás</string>
+	<string name="forward">Adelante</string>
+	<string name="stop">Detener</string>
+	<string name="history">Historial</string>
+	<string name="favicon">favicon</string>
+	<string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="download">Download</string>
+    <string name="question">¿Quieres guardar este archivo?</string>
+    <string name="result">Archivo guardado: </string>
+    <string name="clear">Limpiar</string>
+    <string name="close">Cerrar</string>
+    <string name="stopping">deteniendo</string>
+    <string name="noconnection">Conexión a Internet no disponible</string>
+	<string name="error">Error</string>  
+    <string name="nosd">Almacenamiento no disponible</string>
+	
+<!-- 	Dialogo -->
+	<string name="nombredialogo">Nombre\na buscar</string>
+</resources>

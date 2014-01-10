@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonaranja"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llResolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_btn_black_pearl"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHint"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="@string/hint"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_btn_black_pearl"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSolve"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/solve"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_btn_black_pearl"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etSolve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/solvegame"
+            android:background="@drawable/oval"
+            android:padding="8dp"
+            android:inputType="textCapSentences"
+            android:textColor="@color/black"
+            android:textStyle="bold" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/ivGame"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/game" />
+
+    </LinearLayout>
+
+</LinearLayout>

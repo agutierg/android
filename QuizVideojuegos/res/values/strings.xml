@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Video Games Trivial</string>
+    
+<!--     Main -->
+    <string name="play">PLAY</string>
+    <string name="help">HELP</string>
+    <string name="about">ABOUT</string>
+    <string name="ranking">RANKING</string>
+    
+<!--     list row -->
+    <string name="nivel">nivel</string>
+    <string name="start">start</string>
+
+<!--     Resolver -->
+	<string name="solve">Solve</string>
+	<string name="back">Back</string>
+	<string name="hint">Hint</string>
+	<string name="game">Hint</string>
+	<string name="solvegame">Guess the game...</string>
+	
+	<string name="choose">Choose your name</string>
+	<string name="send">Send</string>
+	
+	<string name="position">POSITION</string>
+	<string name="name">NAME</string>
+	<string name="score">SCORE</string>
+
+</resources>

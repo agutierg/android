@@ -7,21 +7,23 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-
-    <application
+    
+	<application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.agutierrez.yu_gimarket.MainActivity"
+            android:name="com.agutierrez.yu_gimarket.views.SplashScreenActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+ 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.agutierrez.yu_gimarket.views.MainActivity"
+            android:label="@string/app_name" />
     </application>
-
 </manifest>

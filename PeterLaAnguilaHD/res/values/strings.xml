@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Peter La Anguila HD</string>
+    
+    <string name="play">PLAY HD</string>
+    <string name="share">SHARE</string>
+    <string name="more">GET RINGTONE</string>
+    
+    <string name="wallpaper">SET WALLPAPER</string>
+    <string name="wall">WALLPAPER</string>
+
+    <string name="preguntaapp">¿Te gusta esta Aplicación? Por favor, vótala y ayuda a mejorarla! Gracias!</string>
+</resources>

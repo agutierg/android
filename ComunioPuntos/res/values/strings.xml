@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Botones genericos de la aplicacion -->
+    <string name="btnInicio">Inicio</string>
+    <string name="btnVolver">Volver</string>
+
+    <!-- Titulos de las ventanas -->
+    <string name="app_name">Info y Puntos Comunio</string>
+    <string name="puntos_generales">Puntuaciones Generales</string>
+    <string name="puntos_generales_equipo">Puntuación Equipo</string>
+
+    <!-- Pagina principal de la aplicacion -->
+    <string name="mis_equipos">Mis\nEquipos</string>
+    <string name="punt_general">Puntuaciones\nGenerales</string>
+    <string name="anadir_equipo">Añadir\nEquipo</string>
+    <string name="modificar_equipo">Modificar\nAlineación</string>
+    <string name="menu_principal">Menú Principal</string>
+    <string name="eliminar_equipo">Eliminar\nEquipo</string>
+    <string name="info_jugadores">Información\nJugadores</string>
+    <string name="herramientas">Herramientas</string>
+    <string name="informacion">Información</string>
+    <string name="salir">Salir</string>
+    <string name="jornada">Jornada</string>
+    <string name="volver">Volver</string>
+    <string name="resulDir">Resultados Directo</string>
+    <string name="posPunt">Posibles Puntuaciones</string>
+    <string name="musica">Descarga\nMúsica</string>
+
+    <!-- Vista Puntuaciones generales -->
+    <string name="eligeEqu">Elige un equipo</string>
+    <string name="btnAthletic">Athletic de Bilbao</string>
+    <string name="btnAtletico">Atletico de Madrid</string>
+    <string name="btnBarcelona">Barcelona</string>
+    <string name="btnCelta">Celta</string>
+    <string name="btnDeportivo">Deportivo</string>
+    <string name="btnEspanol">Español</string>
+    <string name="btnGetafe">Getafe</string>
+    <string name="btnGranada">Granada</string>
+    <string name="btnLevante">Levante</string>
+    <string name="btnMalaga">Malaga</string>
+    <string name="btnOsasuna">Osasuna</string>
+    <string name="btnRayo">Rayo Vallecano</string>
+    <string name="btnBetis">Betis</string>
+    <string name="btnRMadrid">Real Madrid</string>
+    <string name="btnMallorca">Mallorca</string>
+    <string name="btnRSociedad">Real Sociedad</string>
+    <string name="btnValladolid">Valladolid</string>
+    <string name="btnZaragoza">Zaragoza</string>
+    <string name="btnSevilla">Sevilla</string>
+    <string name="btnValencia">Valencia</string>
+    <string name="btnOnceIdeal">Once Ideal</string>
+
+    <!-- Vista Puntuaciones de Los Equipos Generales -->
+    <string name="puntuacion_total">Puntos Totales: </string>
+    <string name="ivEquiPGE">Equipo</string>
+
+    <!-- Vista Añadir Equipo -->
+    <string name="nombreEquipo">Tu equipo</string>
+    <string name="eligeEquipo">Elige un equipo</string>
+    <string name="eligePosicion">Elige una posición</string>
+    <string name="eligeJugador">Elige un jugador</string>
+    <string name="btnAnadir">Añadir</string>
+    <string name="anadir_jugador">Añadir</string>
+    <string name="ibtnQuitar">Botón</string>
+    <string name="btnGuardar">Guardar Equipo</string>
+
+    <!-- Vista Modificar Equipo -->
+    <string name="eligeEquipoJug">Elige tu equipo</string>
+
+    <!-- Vista Eliminar Equipo -->
+    <string name="btnEliminar">Eliminar</string>
+
+    <!-- Vista Info Aplicacion -->
+    <string name="info_aplicacion">Información de la\naplicación</string>
+
+    <!-- Vista Ayuda -->
+    <string name="ayuda">Ayuda</string>
+    
+    <!-- Vista Jornada -->
+	<string name="jornada_tv">Información Jornada</string>
+	
+	<!-- Vista Info Jugador -->
+	<string name="lesionados">LESIONADOS</string>
+	<string name="duda">SON DUDA</string>
+	<string name="acumulacion">SANCIÓN: ACUMULACIÓN DE TARJETAS</string>
+	<string name="amarillas">SANCIÓN: DOBLE AMARILLA</string>
+	<string name="roja">SANCIÓN: ROJA</string>
+	<string name="noconvocados">NO CONVOCADOS</string>
+	<string name="filial">CONVOCADOS CON EL FILIAL</string>
+</resources>

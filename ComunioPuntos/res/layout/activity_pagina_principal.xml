@@ -1,0 +1,198 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPagPrin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/football_pitch_250"
+    tools:context=".PaginaPrincipal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layoutPrin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="top|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/menu_principal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/fila1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnMisEqui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/mis_equipos"
+                        android:drawableTop="@drawable/mis_equipos_def"
+                        android:text="@string/mis_equipos"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnPuntGen"
+                        style="android:buttonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/punt_general"
+                        android:drawableTop="@drawable/lfp"
+                        android:text="@string/punt_general"
+                        android:textSize="10sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fila2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnInfoJug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/info_jugadores"
+                        android:drawableTop="@drawable/info_jugadores"
+                        android:text="@string/info_jugadores"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnModEqu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/modificar_equipo"
+                        android:drawableTop="@drawable/modificar_equipo_def"
+                        android:text="@string/modificar_equipo"
+                        android:textSize="10sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fila3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnAnaEqu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/anadir_equipo"
+                        android:drawableTop="@drawable/anadir_equipo"
+                        android:text="@string/anadir_equipo"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnElimEqu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/eliminar_equipo"
+                        android:drawableTop="@drawable/eliminar_equipo_def"
+                        android:text="@string/eliminar_equipo"
+                        android:textSize="10sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/fila4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnMusica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/musica"
+                        android:drawableRight="@android:drawable/ic_menu_more"
+                        android:text="@string/musica"
+                        android:textSize="10sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:alpha="0.7"
+            android:background="@drawable/barra54" >
+
+            <ImageView
+                android:id="@+id/btnPosPunt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/posPunt"
+                android:src="@drawable/posibles_puntos" />
+
+            <ImageView
+                android:id="@+id/btnRss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/jornada"
+                android:src="@drawable/jornada64" />
+
+            <ImageView
+                android:id="@+id/btnJornada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/resulDir"
+                android:src="@drawable/resultados_dir60" />
+
+            <ImageView
+                android:id="@+id/btnAyuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/herramientas"
+                android:src="@drawable/help64" />
+
+            <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/informacion"
+                android:src="@drawable/info64" />
+
+            <ImageView
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/salir"
+                android:src="@drawable/exit64" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

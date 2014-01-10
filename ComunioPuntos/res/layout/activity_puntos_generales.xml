@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/football_pitch_250" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvEligeEqu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/eligeEqu"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/ibtnAthletic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnAthletic"
+                        android:src="@drawable/athletic_bilbao_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnAtletico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnAtletico"
+                        android:src="@drawable/atletico_madrid_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnBarcelona"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnBarcelona"
+                        android:src="@drawable/barcelona_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnCelta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnCelta"
+                        android:src="@drawable/celta_de_vigo_icon" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/ibtnAlmeria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnDeportivo"
+                        android:src="@drawable/almeria_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnEspanol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnEspanol"
+                        android:src="@drawable/espanyol_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnGetafe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnGetafe"
+                        android:src="@drawable/getafe_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnGranada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnGranada"
+                        android:src="@drawable/granada_cf" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/ibtnLevante"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnLevante"
+                        android:src="@drawable/logo_levante" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnMalaga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnMalaga"
+                        android:src="@drawable/malaga_cf_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnOsasuna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnOsasuna"
+                        android:src="@drawable/osasuna_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnRayo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnRayo"
+                        android:src="@drawable/rayo_vallecano_icon" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/ibtnBetis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnBetis"
+                        android:src="@drawable/real_betis_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnRMadrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnRMadrid"
+                        android:src="@drawable/real_madrid_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnElche"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnMallorca"
+                        android:src="@drawable/elche_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnRSociedad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnRSociedad"
+                        android:src="@drawable/real_sociedad_icon" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/ibtnValladolid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnValladolid"
+                        android:src="@drawable/real_valladolid_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnVillarreal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnZaragoza"
+                        android:src="@drawable/villarreal_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnSevilla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnSevilla"
+                        android:src="@drawable/sevilla_icon" />
+
+                    <ImageButton
+                        android:id="@+id/ibtnValencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnValencia"
+                        android:src="@drawable/valencia_icon" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/ibtnOnceIdeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/btnOnceIdeal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tshirt_onceid70" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPuntosGenerales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@drawable/barra54"
+            android:gravity="bottom|center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnVolverPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/volver"
+                android:src="@drawable/return64" />
+
+            <ImageView
+                android:id="@+id/btnPosPuntPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/posPunt"
+                android:src="@drawable/posibles_puntos" />
+
+            <ImageView
+                android:id="@+id/btnRssPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/jornada"
+                android:src="@drawable/jornada64" />
+
+            <ImageView
+                android:id="@+id/btnJornadaPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/resulDir"
+                android:src="@drawable/resultados_dir60" />
+
+            <ImageView
+                android:id="@+id/btnAyudaPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/herramientas"
+                android:src="@drawable/help64" />
+
+            <ImageView
+                android:id="@+id/btnInfoPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/informacion"
+                android:src="@drawable/info64" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

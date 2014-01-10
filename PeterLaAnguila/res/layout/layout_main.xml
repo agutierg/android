@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:gravity="bottom|center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/custom_btn_black_pearl"
+        android:drawableRight="@android:drawable/ic_media_play"
+        android:padding="5dp"
+        android:text="@string/play"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_btn_black_pearl"
+        android:drawableRight="@android:drawable/ic_menu_share"
+        android:text="@string/share"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnWallpaper"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_btn_black_pearl"
+        android:drawableRight="@android:drawable/ic_menu_set_as"
+        android:padding="5dp"
+        android:text="@string/wall"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_btn_black_pearl"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:padding="5dp"
+        android:text="@string/more"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btnHd"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_btn_black_pearl"
+        android:drawableRight="@android:drawable/ic_menu_more"
+        android:padding="5dp"
+        android:text="@string/hd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo5" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fondoestanteria" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/ivPeriodicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:contentDescription="@string/btnPeriodicos"
+                android:src="@drawable/news_button" />
+
+            <ImageView
+                android:id="@+id/ivRevistas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/btnRevistas"
+                android:src="@drawable/revista_button" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/ivPerDepor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:contentDescription="@string/btnPerDepor"
+                android:src="@drawable/pre_depo_button" />
+
+            <ImageView
+                android:id="@+id/ivRevCora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/btnRevCora"
+                android:src="@drawable/rev_corazon_button" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/ivPrenExt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:contentDescription="@string/btnPreExt"
+                android:src="@drawable/pre_ext_button" />
+
+            <ImageView
+                android:id="@+id/ivRevCien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rev_cien_button"
+                android:contentDescription="@string/btnRevCien" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_f"
+            android:gravity="bottom|right" >
+
+            <Button
+                android:id="@+id/btnMisFav"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/estrella2"
+                android:drawablePadding="5dp"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                style="?android:attr/buttonStyleInset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@android:drawable/ic_menu_search"
+                android:contentDescription="@string/btnBuscar" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:contentDescription="@string/btnSalir" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

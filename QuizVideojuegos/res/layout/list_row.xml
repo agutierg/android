@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+	<LinearLayout
+        android:id="@+id/llNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/image_bg"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/ivNivel"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/nivel" />
+    </LinearLayout>
+
+    <!-- Nombre de la publicacion -->
+
+    <TextView
+        android:id="@+id/tvNombreN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/llNivel"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Tipo de Publicacion -->
+
+    <TextView
+        android:id="@+id/tvCompletadoN"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNombreN"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/llNivel"
+        android:textColor="@color/blue_f"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivPlayN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/start"
+        android:gravity="right"
+        android:src="@drawable/start" />
+
+    <!-- Rightend Arrow -->  
+
+</RelativeLayout>

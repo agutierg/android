@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Pollito Pio</string>
+    
+    <string name="play">PLAY</string>
+    <string name="share">SHARE</string>
+    <string name="more">GET RINGTONE</string>
+    
+    <string name="wallpaper">SET WALLPAPER</string>
+    <string name="wall">WALLPAPER</string>
+
+</resources>

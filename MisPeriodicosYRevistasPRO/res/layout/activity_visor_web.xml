@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progressBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/progressStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/goButton"
+            android:ems="10"
+            android:inputType="textUri"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/url"
+            android:layout_alignBottom="@+id/url"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/url"
+            android:onClick="go"
+            android:background="@android:drawable/ic_menu_search" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/url"
+            android:enabled="false"
+            android:onClick="back"
+            android:background="@android:drawable/ic_media_previous" />
+
+        <Button
+            android:id="@+id/forwardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/url"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/backButton"
+            android:background="@android:drawable/ic_media_next"
+            android:enabled="false"
+            android:onClick="forward" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/url"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/forwardButton"
+            android:background="@android:drawable/ic_media_pause"
+            android:enabled="false"
+            android:onClick="stop" />
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/goButton"
+            android:onClick="history"
+            android:background="@android:drawable/ic_menu_share" />
+
+    </RelativeLayout>
+
+    <WebView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webkit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@android:color/white"/>
+
+</LinearLayout>
