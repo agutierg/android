@@ -29,7 +29,7 @@ public class ConstantesParametros {
 	public static final String RESULTADOS = "<div class=\"ultima-jornada\">(.*)<div class=\"proxima-jornada\">";
 	public static final String PROX_JORNADA = "<div class=\"proxima-jornada\">(.*)<div class=\"bajo-proxima-jornada estirar\">";
 	public static final String PATRON_NOMBRE = "<a class='nombreJugador' href='../estadisticas/jugador/";
-	public static final String PATRON_ESTADO = "<img src='http://s355609116.mialojamiento.es/primera/images/estados/(.*)";
+	public static final String PATRON_ESTADO = "<img src='http://calculapuntoscomunio.com/images/estados/(.*)";
 	public static final String PATRON_DESC1 = "<td class='descripcion' width='230px'>(.*)";
 	public static final String PATRON_DESC2 = "<img  title='Detalles de la baja' src='../images/iconos/mini/lupa.png' /></td><td class='descripcion' width='230px'>(.*)";
 	public static final String PATRON_FIN_ESTADO = ".png'";

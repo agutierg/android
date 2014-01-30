@@ -178,7 +178,7 @@ public class AnadirEquipo extends Activity implements AdListener {
 						 * BASE DE DATOS
 						 */
 						PuntosComunioSQLite baseDatosComunio = new PuntosComunioSQLite(
-								view.getContext(), "DBComunioPuntos", null, 10);
+								view.getContext(), "DBComunioPuntos", null, 11);
 						final SQLiteDatabase db = baseDatosComunio
 								.getWritableDatabase();
 						Integer idEquipoJug = null;
@@ -631,7 +631,7 @@ public class AnadirEquipo extends Activity implements AdListener {
 			 * BASE DE DATOS
 			 */
 			PuntosComunioSQLite baseDatosComunio = new PuntosComunioSQLite(
-					this, "DBComunioPuntos", null, 10);
+					this, "DBComunioPuntos", null, 11);
 			final SQLiteDatabase db = baseDatosComunio.getWritableDatabase();
 			if (db != null) {
 				String[] campos = new String[] { pos, equipoSelec };

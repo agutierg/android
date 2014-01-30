@@ -47,7 +47,7 @@
                         android:contentDescription="@string/mis_equipos"
                         android:drawableTop="@drawable/mis_equipos_def"
                         android:text="@string/mis_equipos"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
 
                     <Button
                         android:id="@+id/btnPuntGen"
@@ -57,7 +57,7 @@
                         android:contentDescription="@string/punt_general"
                         android:drawableTop="@drawable/lfp"
                         android:text="@string/punt_general"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
                 </TableRow>
 
                 <TableRow
@@ -73,7 +73,7 @@
                         android:contentDescription="@string/info_jugadores"
                         android:drawableTop="@drawable/info_jugadores"
                         android:text="@string/info_jugadores"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
 
                     <Button
                         android:id="@+id/btnModEqu"
@@ -82,7 +82,7 @@
                         android:contentDescription="@string/modificar_equipo"
                         android:drawableTop="@drawable/modificar_equipo_def"
                         android:text="@string/modificar_equipo"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
                 </TableRow>
 
                 <TableRow
@@ -98,7 +98,7 @@
                         android:contentDescription="@string/anadir_equipo"
                         android:drawableTop="@drawable/anadir_equipo"
                         android:text="@string/anadir_equipo"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
 
                     <Button
                         android:id="@+id/btnElimEqu"
@@ -107,7 +107,7 @@
                         android:contentDescription="@string/eliminar_equipo"
                         android:drawableTop="@drawable/eliminar_equipo_def"
                         android:text="@string/eliminar_equipo"
-                        android:textSize="10sp" />
+                        android:textSize="12sp" />
                 </TableRow>
 
                 <TableRow
@@ -115,15 +115,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center" >
-
-                    <Button
-                        android:id="@+id/btnMusica"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:contentDescription="@string/musica"
-                        android:drawableRight="@android:drawable/ic_menu_more"
-                        android:text="@string/musica"
-                        android:textSize="10sp" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">Hits 2013</string>
+    <string name="ir">Ir</string>
+    <string name="facebook">Facebook</string>
+    <string name="music">HITS</string>
+    <string name="dostrece">2013</string>
+    <string name="new_button">HITS NUEVOS</string>
+    <string name="hits">HITS</string>
+    <string name="latin">HITS LATINOS</string>
+    <string name="freak">HITS FRIKIS</string>
+    <string name="download">Descargar</string>
+    <string name="youtube">youtube</string>
+    <string name="likerow">like</string>
+    <string name="best">TOP 20</string>
+    <string name="request">PIDE TUS CANCIONES</string>
+    
+    <string name="like">¿Te gustan los Quizs?</string>
+    
+    <string name="send">ENVIAR</string>
+    <string name="peticion">¿Qué canción quieres? (Título y Cantante)</string>
+    <string name="please">POR FAVOR, TÍTULO Y CANTANTE</string>
+    <string name="bepatient">Nota: Por favor ten paciencia. Procesaremos tu petición tan pronto como podamos. Se le dará prioridad a las canciones que más peticiones tengan. Gracias.</string>
+    
+    <string name="informacion">La canción se escucha en línea. Si quieres tenerla, descárgala con Descargar. Se recomienda utilizar Wifi tanto para escuchar como para descargar las canciones. Si te gusta la aplicación, VÓTALA por favor!</string>
+
+    <string name="uploading">Actualizando Datos.</string>
+    <string name="descargabreve">La descarga comenzará en breve. Se recomienda utilizar WIFI ya que por 3G la descarga será lenta. Por favor, ten paciencia y espera a que se complete el 100 %. La canción se guarda en /sdcard. Bajando.</string>
+    <string name="rates">Votos: </string>
+    <string name="preguntavoto">¿Quieres votar esta canción?</string>
+    <string name="something">Introduce una canción, por favor</string>
+    <string name="peticionrecogida">Petición aceptada. En breves procesaremos tu petición</string>
+    <string name="noavailable">Canción no disponible</string>
+    <string name="likemore">Canción + 1. Gracias por tu voto!</string>
+    
+    <string name="preguntaapp">¿Te gusta esta Aplicación? Por favor, vótala y ayuda a mejorarla! Gracias!</string>
+    <string name="brokenlinks">¿LINKS CAÍDOS?</string>
+    
+    <string name="peticionlink">¿Qué canción no está disponible? (Título y Cantante)</string>
+    
+</resources>

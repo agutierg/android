@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">Hits 2013</string>
+    <string name="ir">Go</string>
+    <string name="facebook">Facebook</string>
+    <string name="music">HITS</string>
+    <string name="dostrece">2013</string>
+    <string name="new_button">NEW HITS</string>
+    <string name="hits">HITS</string>
+    <string name="latin">LATIN HITS</string>
+    <string name="freak">FREAK HITS</string>
+    <string name="download">Download</string>
+    <string name="youtube">youtube</string>
+    <string name="likerow">like</string>
+    <string name="best">TOP 20</string>
+    <string name="request">ASK YOUR SONGS</string>
+    
+    <string name="like">Do you like Quizs? Try</string>
+    
+    <string name="send">SEND</string>
+    <string name="peticion">What song do you want? (Title and Artist)</string>
+    <string name="please">PLEASE, TITLE AND ARTIST</string>
+    <string name="bepatient">Note: Please be patient. Your request will be processed as soon as possible. Priority will be given to songs that have more requests. Thank you.</string>
+    
+    <string name="informacion">The song is heard online. If you have it, download it with Download. Wifi is recommended both to listen and to download the songs. If you like the app, please Vote It!</string>
+
+    <string name="uploading">Uploading Data.</string>
+    <string name="descargabreve">The download is starting. WIFI is recommended, since that the download will be slow via 3G. Please be patient and wait for it to complete 100%. The song is saved in /sdcard. Downloading.</string>
+    <string name="rates">Rates: </string>
+    <string name="preguntavoto">Do you want to rate this song?</string>
+    <string name="something">Enter a song, please</string>
+    <string name="peticionrecogida">Request accepted. In short, we will process your request</string>
+    <string name="noavailable">Song not available</string>
+    <string name="likemore">Song + 1. Thank you for your rate!</string>
+    
+    <string name="preguntaapp">Do you like this App? Please, rate the App and helps to improve it! Thank you!</string>
+    <string name="brokenlinks">BROKEN LINKS?</string>
+    
+    <string name="peticionlink">Which link is broken? (Title and Artist)</string>
+</resources>

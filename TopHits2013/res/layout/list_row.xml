@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/barra54"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+
+    <!-- Nombre de la publicacion -->
+
+    <TextView
+        android:id="@+id/tvNombreROW"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Tipo de Publicacion -->
+
+    <TextView
+        android:id="@+id/tvCantanteROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNombreROW"
+        android:layout_marginTop="1dip"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+    
+    <TextView
+        android:id="@+id/tvVotosROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCantanteROW"
+        android:layout_marginTop="1dip"
+        android:textColor="@color/image_border_center"
+        android:textSize="12sp" />
+    
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/tvDurationROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/tvNombreROW"
+        android:gravity="right"
+        android:layout_marginRight="5dip"
+        android:textSize="10sp"
+        android:textColor="@color/image_border_end"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/ivLikeROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tvNombreROW"
+        android:layout_marginRight="145dp"
+        android:contentDescription="@string/likerow"
+        android:gravity="right"
+        android:src="@drawable/like" />
+    
+    <ImageView
+        android:id="@+id/ivYoutubeROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/ivLikeROW"
+        android:layout_marginRight="110dp"
+        android:contentDescription="@string/youtube"
+        android:gravity="right"
+        android:src="@drawable/play" />
+    
+    <ImageView
+        android:id="@+id/ivFacebookROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/ivYoutubeROW"
+        android:layout_marginRight="75dp"
+        android:contentDescription="@string/facebook"
+        android:gravity="right"
+        android:src="@drawable/share" />
+    
+    <Button
+        android:id="@+id/ivDownloadROW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/ivFacebookROW"
+        android:layout_marginRight="25dp"
+        android:contentDescription="@string/download"
+        android:text="@string/download"
+        android:textSize="8sp"
+        android:padding="5dp"
+        android:gravity="right"
+        android:drawableTop="@drawable/download" />
+
+    <!-- Rightend Arrow -->  
+
+</RelativeLayout>

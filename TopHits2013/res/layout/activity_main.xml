@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/music"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fondo2"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/dostrece"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnBest"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/best"
+                android:padding="5dp"
+                android:text="@string/best"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/new_button"
+                android:padding="5dp"
+                android:text="@string/new_button"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnHits"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/hits"
+                android:padding="5dp"
+                android:text="@string/hits"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLatin"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/latin"
+                android:padding="5dp"
+                android:text="@string/latin"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnFreak"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/freak"
+                android:padding="5dp"
+                android:text="@string/freak"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnQuiz"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/quiz"
+                android:padding="5dp"
+                android:text="@string/like"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/request"
+                android:padding="10dp"
+                android:text="@string/request"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnLinks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/black_overlay"
+                android:drawableRight="@drawable/broken"
+                android:padding="10dp"
+                android:text="@string/brokenlinks"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/music"
+        android:orientation="vertical" 
+        android:layout_marginBottom="10dp">
+    </LinearLayout>
+
+</RelativeLayout>

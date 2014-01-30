@@ -254,7 +254,7 @@ public class PuntosGeneralesEquipo extends Activity {
 		 * BASE DE DATOS
 		 */
 		PuntosComunioSQLite baseDatosComunio = new PuntosComunioSQLite(this,
-				"DBComunioPuntos", null, 10);
+				"DBComunioPuntos", null, 11);
 		final SQLiteDatabase db = baseDatosComunio.getWritableDatabase();
 		if (db != null) {
 			String[] campos = new String[] { "posFut" };

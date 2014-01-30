@@ -68,7 +68,7 @@ public class EliminarEquipo extends Activity implements AdListener {
 		actividad = this;
 
 		baseDatosComunio = new PuntosComunioSQLite(this, "DBComunioPuntos",
-				null, 10);
+				null, 11);
 
 		/**
 		 * 

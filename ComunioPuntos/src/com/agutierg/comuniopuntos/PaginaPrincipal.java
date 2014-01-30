@@ -24,7 +24,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -63,7 +62,6 @@ public class PaginaPrincipal extends Activity {
 	private Button btnModEqu;
 	private Button btnElimEqu;
 	private Button btnInfoJug;
-	private Button btnMusica;
 
 	// Submenú
 	private ImageView btnExit;
@@ -121,7 +119,6 @@ public class PaginaPrincipal extends Activity {
 		btnModEqu = (Button) findViewById(R.id.btnModEqu);
 		btnElimEqu = (Button) findViewById(R.id.btnElimEqu);
 		btnInfoJug = (Button) findViewById(R.id.btnInfoJug);
-		btnMusica = (Button) findViewById(R.id.btnMusica);
 
 		btnAyuda = (ImageView) findViewById(R.id.btnAyuda);
 		btnExit = (ImageView) findViewById(R.id.btnExit);
@@ -384,17 +381,6 @@ public class PaginaPrincipal extends Activity {
 			}
 		});
 
-		// MUSICA
-		btnMusica.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View view) {
-				startActivity(new Intent(
-						Intent.ACTION_VIEW,
-						Uri.parse("https://play.google.com/store/apps/details?id=com.agutierg.hits2013")));
-			}
-		});
-
 		/**
 		 * Elementos y acciones de los elementos
 		 */
@@ -404,7 +390,7 @@ public class PaginaPrincipal extends Activity {
 		 */
 		// Abrimos la base de datos 'DBUsuarios' en modo escritura
 		baseDatosComunio = new PuntosComunioSQLite(this, "DBComunioPuntos",
-				null, 10);
+				null, 11);
 
 		SQLiteDatabase db = baseDatosComunio.getWritableDatabase();
 
