@@ -390,7 +390,7 @@ public class PaginaPrincipal extends Activity {
 		 */
 		// Abrimos la base de datos 'DBUsuarios' en modo escritura
 		baseDatosComunio = new PuntosComunioSQLite(this, "DBComunioPuntos",
-				null, 11);
+				null, 13);
 
 		SQLiteDatabase db = baseDatosComunio.getWritableDatabase();
 

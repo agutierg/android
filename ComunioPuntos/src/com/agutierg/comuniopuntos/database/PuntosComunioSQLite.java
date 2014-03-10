@@ -75,7 +75,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int versionAnterior,
 			int versionNueva) {
 
-		if (versionAnterior == 10) {
+		if (versionAnterior == 12) {
 
 			// Borramos
 			deleteFutAthlectic(db);
@@ -215,6 +215,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ATHLETIC_Saborit);
 		db.execSQL(ConsultasSQL.INSERT_ATHLETIC_Mikel_Rico);
 		db.execSQL(ConsultasSQL.INSERT_ATHLETIC_Albizua);
+		db.execSQL(ConsultasSQL.INSERT_ATHLETIC_Guillermo_Fernandez);
 	}
 
 	/**
@@ -222,7 +223,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * ATHLETIC
 	 */
 	private void insertNewFutAthlectic(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_ATHLETIC_Guillermo_Fernandez);
+
 	}
 
 	/**
@@ -253,13 +254,13 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_MANQUILLO);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_MARIO_SUAREZ);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_MIRANDA);
-		db.execSQL(ConsultasSQL.INSERT_ATLETICO_OLIV_TORRES);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_RAUL_GARCIA);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_TIAGO);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Jose_Gimenez);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Alderweireld);
-		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Guilavogui);
 		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Aranzubia);
+		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Jose_Sosa);
+		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Diego);
 	}
 
 	/**
@@ -267,14 +268,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * ATHLETICO
 	 */
 	private void insertNewFutAthlectico(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_ATLETICO_Jose_Sosa);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: ATHLETICO
 	 */
 	private void deleteFutAthlectico(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ATLETICO_Leo_Baptistao);
+
 	}
 
 	/**
@@ -307,6 +308,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_BARCELONA_VICTOR_VALDES);
 		db.execSQL(ConsultasSQL.INSERT_BARCELONA_Neymar);
 		db.execSQL(ConsultasSQL.INSERT_BARCELONA_XAVI);
+		db.execSQL(ConsultasSQL.INSERT_BARCELONA_Adama_Traore);
 	}
 
 	/**
@@ -314,7 +316,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Barcelona
 	 */
 	private void insertNewFutBarcelona(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_BARCELONA_Adama_Traore);
+
 	}
 
 	/**
@@ -342,7 +344,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_BETIS_RUBEN_CASTRO);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_Braian_Rodriguez);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_SALVA_SEVILLA);
-		db.execSQL(ConsultasSQL.INSERT_BETIS_SERGIO_ROD);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_VADILLO);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_VILARCHAO);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_C_Garcia);
@@ -356,15 +357,17 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_BETIS_Verdu);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_Xavi_Torres);
 		db.execSQL(ConsultasSQL.INSERT_BETIS_Jordi_Figueras);
-		db.execSQL(ConsultasSQL.INSERT_BETIS_Steinhofer);
+		db.execSQL(ConsultasSQL.INSERT_BETIS_Caro);
+		db.execSQL(ConsultasSQL.INSERT_BETIS_Leo_Baptistao);
+		db.execSQL(ConsultasSQL.INSERT_BETIS_Adan);
+		db.execSQL(ConsultasSQL.INSERT_BETIS_Alfred_NDiaye);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Betis
 	 */
 	private void insertNewFutBetis(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_BETIS_Caro);
-		db.execSQL(ConsultasSQL.INSERT_BETIS_Leo_Baptistao);
+
 	}
 
 	/**
@@ -381,19 +384,15 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 
 		db.execSQL(ConsultasSQL.INSERT_CELTA_ALEX_LOPEZ);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_AUGUSTO_FERNANDEZ);
-		db.execSQL(ConsultasSQL.INSERT_CELTA_BELLVIS);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_CABRAL);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_ORELLANA);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_HUGO_MALLO);
-		db.execSQL(ConsultasSQL.INSERT_CELTA_JONATHAN_VILA);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_JONNY);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_KROHN_DEHLI);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_MARIO_BER);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_OUBINA);
-		db.execSQL(ConsultasSQL.INSERT_CELTA_SAMUEL_LLORCA);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_SERGIO_ALVAREZ);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_Charles);
-		db.execSQL(ConsultasSQL.INSERT_CELTA_David_Rodriguez);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_Fontas);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_Madinda);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_Nolito);
@@ -403,21 +402,23 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_CELTA_Yoel);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_Aurtenetxe);
 		db.execSQL(ConsultasSQL.INSERT_CELTA_David_Costas);
+		db.execSQL(ConsultasSQL.INSERT_CELTA_TONI_ROD);
+		db.execSQL(ConsultasSQL.INSERT_CELTA_Inigo_Lopez);
+		db.execSQL(ConsultasSQL.INSERT_CELTA_Welliton);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Celta
 	 */
 	private void insertNewFutCelta(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_CELTA_TONI_ROD);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: Celta
 	 */
 	private void deleteFutCelta(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_CELTA_TUNEZ);
-		db.execSQL(ConsultasSQL.DELETE_CELTA_TONI_ROD);
+
 	}
 
 	/**
@@ -434,25 +435,16 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_MARCELO_SILVA);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_NELSON);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Oscar_Diaz);
-		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Pellerano);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Rafita);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Rodri);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Soriano);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Suso);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Tebar);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Trujillo);
-		db.execSQL(ConsultasSQL.INSERT_ALMERIA_USTARI);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Verza);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Torsiglieri);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Kiu);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Helder_Barbosa);
-	}
-
-	/**
-	 * Método que inserta los NUEVOS Futbolistas en la base de datos del:
-	 * Almeria
-	 */
-	private void insertNewFutAlmeria(SQLiteDatabase db) {
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Julian);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Hans_Martinez);
 		db.execSQL(ConsultasSQL.INSERT_ALMERIA_Mane);
@@ -461,10 +453,18 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	}
 
 	/**
+	 * Método que inserta los NUEVOS Futbolistas en la base de datos del:
+	 * Almeria
+	 */
+	private void insertNewFutAlmeria(SQLiteDatabase db) {
+
+	}
+
+	/**
 	 * Método que borra los Futbolistas en la base de datos del: Almeria
 	 */
 	private void deleteFutAlmeria(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ALMERIA_CHRI_FERN);
+
 	}
 
 	/**
@@ -480,7 +480,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_MATTIONI);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_RAUL_ROD);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_SERGIO_GARCIA);
-		db.execSQL(ConsultasSQL.INSERT_ESPANOL_SERGIO_TEJERA);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_SIMAO);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_STUANI);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_VICTOR_ALVAREZ);
@@ -491,7 +490,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Lanzarote);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Pizzi);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Sidnei);
-		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Thievy);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_German);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Alex_Fernandez);
 		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Torje);
@@ -503,14 +501,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Espanol
 	 */
 	private void insertNewFutEspanol(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_ESPANOL_Clerc);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: Espanol
 	 */
 	private void deleteFutEspanol(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_ESPANOL_Adrian_Luna);
+
 	}
 
 	/**
@@ -527,7 +525,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_JUAN_ROD);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_LACEN);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_LAFITA);
-		db.execSQL(ConsultasSQL.INSERT_GETAFE_LOPO);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_MICHEL_MADERA);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_MOYA);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_PEDRO_LEON);
@@ -540,6 +537,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_Arroyo);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_Lisandro);
 		db.execSQL(ConsultasSQL.INSERT_GETAFE_Ciprian_Marica);
+		db.execSQL(ConsultasSQL.INSERT_GETAFE_Sammir);
 	}
 
 	/**
@@ -571,8 +569,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_MAINZ);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_NYOM);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_ROBERTO_FERN);
-		db.execSQL(ConsultasSQL.INSERT_GRANADA_SIQUEIRA);
-		db.execSQL(ConsultasSQL.INSERT_GRANADA_YEBDA);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_Coeff);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_Iturra);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_Jeison_Murillo);
@@ -585,6 +581,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_Recio);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_Ighalo);
 		db.execSQL(ConsultasSQL.INSERT_GRANADA_M_Pereira);
+		db.execSQL(ConsultasSQL.INSERT_GRANADA_Tiago_Ilori);
 	}
 
 	/**
@@ -592,14 +589,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Granada
 	 */
 	private void insertNewFutGranada(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_GRANADA_Tiago_Ilori);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: Granada
 	 */
 	private void deleteFutGranada(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_GRANADA_Matias_Campos);
+
 	}
 
 	/**
@@ -613,7 +610,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_HIGON);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_JUANFRAN);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_KEYLOR);
-		db.execSQL(ConsultasSQL.INSERT_LEVANTE_LELL);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_NIKOS);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_PEDRO_LOPEZ);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_PEDRO_RIOS);
@@ -625,14 +621,16 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_El_Adoua);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Ivanschitz);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Javi_Jimenez);
-		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Nong);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Pallardo);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Sergio_Pinto);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Simao_Mate);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Xumetra);
-		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Gomis);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Jason);
 		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Baba);
+		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Nagore);
+		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Camarasa);
+		db.execSQL(ConsultasSQL.INSERT_LEVANTE_M_Sissoko);
+		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Victor_Casadesus);
 	}
 
 	/**
@@ -640,8 +638,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Levante
 	 */
 	private void insertNewFutLevante(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Nagore);
-		db.execSQL(ConsultasSQL.INSERT_LEVANTE_Camarasa);
+
 	}
 
 	/**
@@ -659,7 +656,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_CABALLERO);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_CAMACHO);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_ELISEU);
-		db.execSQL(ConsultasSQL.INSERT_MALAGA_FABRICE);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_GAMEZ);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_KAMENI);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_DUDA);
@@ -667,25 +663,26 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_SERGIO_SANCHEZ);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_WELINGTON);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_ANTUNES);
-		db.execSQL(ConsultasSQL.INSERT_MALAGA_PEDRO_MORALES);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Angeleri);
-		db.execSQL(ConsultasSQL.INSERT_MALAGA_Bobley_Anderson);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Flavio_Ferreira);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Juanmi_Jimenez);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Pawlowski);
-		db.execSQL(ConsultasSQL.INSERT_MALAGA_Roberto_Chen);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Santa_Cruz);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Tissone);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Samu_Garcia);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Sergi_Darder);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_El_Hamdaoui);
+		db.execSQL(ConsultasSQL.INSERT_MALAGA_Casado);
+		db.execSQL(ConsultasSQL.INSERT_MALAGA_Iakovenko);
+		db.execSQL(ConsultasSQL.INSERT_MALAGA_Nordin_Amrabat);
+		db.execSQL(ConsultasSQL.INSERT_MALAGA_Rescaldani);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Malaga
 	 */
 	private void insertNewFutMalaga(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_MALAGA_Casado);
+		db.execSQL(ConsultasSQL.INSERT_MALAGA_PEDRO_MORALES);
 		db.execSQL(ConsultasSQL.INSERT_MALAGA_Pablo_Perez);
 	}
 
@@ -693,7 +690,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: Malaga
 	 */
 	private void deleteFutMalaga(SQLiteDatabase db) {
-
+		db.execSQL(ConsultasSQL.DELETE_MALAGA_Pedro_Morales);
 	}
 
 	/**
@@ -710,10 +707,8 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Domingo_Cisma);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Edu_Albacar);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Fidel);
-		db.execSQL(ConsultasSQL.INSERT_ELCHE_Generelo);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Javi_Flores);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Lomban);
-		db.execSQL(ConsultasSQL.INSERT_ELCHE_M_Stevanovic);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Mantecon);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Manu_del_Moral);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Manu_Herrera);
@@ -725,13 +720,16 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Javi_Marquez);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Alvaro_Gimenez);
 		db.execSQL(ConsultasSQL.INSERT_ELCHE_Boakye);
+		db.execSQL(ConsultasSQL.INSERT_ELCHE_Cristian_Herrera);
+		db.execSQL(ConsultasSQL.INSERT_ELCHE_Rodrigues);
+		db.execSQL(ConsultasSQL.INSERT_ELCHE_Charlie_Dean);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Elche
 	 */
 	private void insertNewFutElche(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_ELCHE_Cristian_Herrera);
+
 	}
 
 	/**
@@ -762,7 +760,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_RIESGO);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_ROBERTO_TORRES);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_SISI);
-		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Echaide);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Joan_Oriol);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Loties);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Maikel);
@@ -770,13 +767,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Oriol_Riera);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Satrustegui);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Unai_Garcia);
-	}
-
-	/**
-	 * Método que inserta los NUEVOS Futbolistas en la base de datos del:
-	 * Osasuna
-	 */
-	private void insertNewFutOsasuna(SQLiteDatabase db) {
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_LOLO);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Jose_Garcia);
 		db.execSQL(ConsultasSQL.INSERT_OSASUNA_Lobato);
@@ -784,11 +774,18 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	}
 
 	/**
+	 * Método que inserta los NUEVOS Futbolistas en la base de datos del:
+	 * Osasuna
+	 */
+	private void insertNewFutOsasuna(SQLiteDatabase db) {
+
+	}
+
+	/**
 	 * Método que borra los Futbolistas en la base de datos del: Osasuna
 	 */
 	private void deleteFutOsasuna(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_OSASUNA_Ariel_Nunez);
-		db.execSQL(ConsultasSQL.DELETE_OSASUNA_LOLO);
+
 	}
 
 	/**
@@ -805,7 +802,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_RAYO_JOSE_CARLOS);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_LASS);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_NACHO_MARTINEZ);
-		db.execSQL(ConsultasSQL.INSERT_RAYO_RODRIGUEZ);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_RUBEN_MARTINEZ);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_RUBEN_RAMIRO);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_TITO);
@@ -823,13 +819,15 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Ze_Castro);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Jonathan_Viera);
 		db.execSQL(ConsultasSQL.INSERT_RAYO_Embarba);
+		db.execSQL(ConsultasSQL.INSERT_RAYO_Rochina);
+		db.execSQL(ConsultasSQL.INSERT_RAYO_Borja_Lopez);
 	}
 
 	/**
 	 * Método que inserta los NUEVOS Futbolistas en la base de datos del: Rayo
 	 */
 	private void insertNewFutRayo(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_RAYO_Rochina);
+
 	}
 
 	/**
@@ -897,7 +895,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_ANSOTEGI);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_BERGARA);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_BRAVO);
-		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_CADAMURO);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_CARLOS_MARTINEZ);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_CHORY);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_DE_LA_BELLA);
@@ -918,6 +915,8 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_Granero);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_Gaztanaga);
 		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_Sangalli);
+		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_Zaldua);
+		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_Canales);
 	}
 
 	/**
@@ -925,7 +924,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * RSociedad
 	 */
 	private void insertNewFutRSociedad(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_RSOCIEDAD_Zaldua);
+
 	}
 
 	/**
@@ -941,15 +940,11 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 */
 	private void insertFutSevilla(SQLiteDatabase db) {
 
-		db.execSQL(ConsultasSQL.INSERT_SEVILLA_ALEX_RUBIO);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_BETO);
-		db.execSQL(ConsultasSQL.INSERT_SEVILLA_CALA);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_COKE);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_FAZIO);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_FERNANDO_NAV);
-		db.execSQL(ConsultasSQL.INSERT_SEVILLA_JULIAN);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_PEROTTI);
-		db.execSQL(ConsultasSQL.INSERT_SEVILLA_RABELLO);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_RAKITIC);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_REYES);
 		db.execSQL(ConsultasSQL.INSERT_SEVILLA_TROCHOWSKI);
@@ -983,8 +978,7 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * Método que borra los Futbolistas en la base de datos del: SEVILLA
 	 */
 	private void deleteFutSevilla(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_SEVILLA_Rusescu);
-		db.execSQL(ConsultasSQL.DELETE_SEVILLA_MADURO);
+
 	}
 
 	/**
@@ -993,14 +987,10 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 */
 	private void insertFutValencia(SQLiteDatabase db) {
 
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_BANEGA);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_BARRAGAN);
-
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_CANALES);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_DIEGO_ALVES);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_FEGHOULI);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_GUAITA);
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_GUARDADO);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_JOAO);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_JONAS);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_MATHIEU);
@@ -1010,11 +1000,15 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_VICTOR_RUIZ);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Alcacer);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Fede_Cartabia);
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Helder_Postiga);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Javi_Fuego);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Michel_Herrero);
 		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Oriol_Romeu);
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Pabon);
+		db.execSQL(ConsultasSQL.INSERT_VALENCIA_BERNAT);
+		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Ruben_Vezo);
+		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Eduardo_Vargas);
+		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Senderos);
+		db.execSQL(ConsultasSQL.INSERT_VALENCIA_S_Keita);
+		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Vinicius_Araujo);
 	}
 
 	/**
@@ -1022,17 +1016,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * VALENCIA
 	 */
 	private void insertNewFutValencia(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_BERNAT);
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Ruben_Vezo);
-		db.execSQL(ConsultasSQL.INSERT_VALENCIA_Eduardo_Vargas);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: VALENCIA
 	 */
 	private void deleteFutValencia(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_VALENCIA_RAMI);
-		db.execSQL(ConsultasSQL.DELETE_VALENCIA_BERNAT);
+
 	}
 
 	/**
@@ -1058,10 +1049,12 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_VICTOR_PEREZ);
 		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_VALDET_RAMA);
 		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Diego_Marino);
-		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Gilberto_Garcia);
 		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Heinz);
 		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Osorio);
 		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Fausto_Rossi);
+		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Bergdich);
+		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Mitrovic);
+		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Jeffren);
 	}
 
 	/**
@@ -1069,15 +1062,14 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * VALLADOLID
 	 */
 	private void insertNewFutValladolid(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Bergdich);
-		db.execSQL(ConsultasSQL.INSERT_VALLADOLID_Mitrovic);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: VALLADOLID
 	 */
 	private void deleteFutValladolid(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.DELETE_VALLADOLID_Bergdich);
+
 	}
 
 	/**
@@ -1089,7 +1081,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Bruno_Soriano);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Cani);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Giovani);
-		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Hernan_Perez);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Jaume_Costa);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Javier_Aquino);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Jokic);
@@ -1100,7 +1091,6 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Musacchio);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Pablo_Iniguez);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Pantic);
-		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Farinos);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Perbet);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Sergio_Asenjo);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Tomas_Pina);
@@ -1108,6 +1098,10 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Uche);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Gabriel_Paulista);
 		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Dorado);
+		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Edu_Ramos);
+		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Nahuel);
+		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Oliver_Torres);
+		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Joan_Roman);
 	}
 
 	/**
@@ -1115,14 +1109,13 @@ public class PuntosComunioSQLite extends SQLiteOpenHelper {
 	 * VILLARREAL
 	 */
 	private void insertNewFutVillarreal(SQLiteDatabase db) {
-		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Edu_Ramos);
-		db.execSQL(ConsultasSQL.INSERT_VILLARREAL_Nahuel);
+
 	}
 
 	/**
 	 * Método que borra los Futbolistas en la base de datos del: VILLARREAL
 	 */
 	private void deleteFutVillarreal(SQLiteDatabase db) {
-
+		db.execSQL(ConsultasSQL.DELETE_VILLARREAL_Farinos);
 	}
 }
