@@ -414,7 +414,7 @@ public class AnadirEquipo extends Activity implements AdListener {
 						.equals(posicionSelec)) {
 					int numCenAnadidos = llCentrocampistaEJ.getChildCount();
 					// Si no hay ninguno lo añadimos
-					if (numCenAnadidos < 5) {
+					if (numCenAnadidos < 6) {
 						llCentrocampistaEJ.addView(btnJugadorEJ);
 						// Lo añadimos en la lista
 						listjbnMedio.add(btnJugadorEJ);
@@ -430,7 +430,7 @@ public class AnadirEquipo extends Activity implements AdListener {
 						.equals(posicionSelec)) {
 					int numDelAnadidos = llDelanteroEJ.getChildCount();
 					// Si no hay ninguno lo añadimos
-					if (numDelAnadidos < 3) {
+					if (numDelAnadidos < 4) {
 						llDelanteroEJ.addView(btnJugadorEJ);
 						// Lo añadimos en la lista
 						listjbnDelantero.add(btnJugadorEJ);

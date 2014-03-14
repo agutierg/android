@@ -116,8 +116,8 @@ public class ConstantesParametros {
 	// Mensajes de error
 	public static final String ERROR_MAX_PORTEROS = "Ya tienes un portero";
 	public static final String ERROR_MAX_DEFENSAS = "Ya tienes 5 defensas";
-	public static final String ERROR_MAX_CENTRO = "Ya tienes 5 medios";
-	public static final String ERROR_MAX_DELANTEROS = "Ya tienes 3 delanteros";
+	public static final String ERROR_MAX_CENTRO = "Ya tienes 6 medios";
+	public static final String ERROR_MAX_DELANTEROS = "Ya tienes 4 delanteros";
 	public static final String ERROR_JUGADOR_YA_ANADIDO = "Jugador ya agregado";
 	public static final String EQUIPO_NO_JUGADO = "Aun no ha jugado";
 	public static final String ERROR_ONCE_JUGADORES = "Ya has agregado 11 jugadores";

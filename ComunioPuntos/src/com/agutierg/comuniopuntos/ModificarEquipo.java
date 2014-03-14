@@ -618,7 +618,7 @@ public class ModificarEquipo extends Activity implements AdListener {
 						.equals(posicionSelec)) {
 					int numCenAnadidos = llCentrocampistaMD.getChildCount();
 					// Si no hay ninguno lo añadimos
-					if (numCenAnadidos < 5) {
+					if (numCenAnadidos < 6) {
 						llCentrocampistaMD.addView(btnJugadorEJ);
 						// Lo añadimos en la lista
 						listjbnMedio.add(btnJugadorEJ);
@@ -634,7 +634,7 @@ public class ModificarEquipo extends Activity implements AdListener {
 						.equals(posicionSelec)) {
 					int numDelAnadidos = llDelanteroMD.getChildCount();
 					// Si no hay ninguno lo añadimos
-					if (numDelAnadidos < 3) {
+					if (numDelAnadidos < 4) {
 						llDelanteroMD.addView(btnJugadorEJ);
 						// Lo añadimos en la lista
 						listjbnDelantero.add(btnJugadorEJ);
