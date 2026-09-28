@@ -1,0 +1,42 @@
+========================================
+DESCRIPCIÓN BREVE (máx. 80 caracteres — esta tiene 78)
+========================================
+El vídeo del Pollito Pío sin conexión: míralo, ponlo de tono o de wallpaper.
+
+========================================
+DESCRIPCIÓN COMPLETA (máx. 4000 caracteres)
+========================================
+¿Te acuerdas del pollito más famoso de internet? Vuelve, y esta vez sin necesidad de conexión.
+
+Pollito Pio Offline te trae el mítico vídeo de la canción viral para que lo disfrutes donde quieras: en el metro, en el coche o en mitad del campo. El vídeo está incluido en la app, así que se reproduce al instante y sin gastar datos.
+
+QUÉ PUEDES HACER
+
+• Ver el vídeo completo sin internet, con reproducción en bucle automática
+• Poner la canción como tono de llamada con un solo toque
+• Establecer el wallpaper del pollito en tu pantalla
+• Compartir la canción con quien tú quieras
+
+SIN COMPLICACIONES
+
+• Ligera y rápida: la abres y suena
+• Funciona sin conexión
+• Sin registros ni permisos raros
+
+Un clásico de 2013 renovado por dentro y por fuera para los móviles de hoy. Si te suena el "pío, pío, pío"… ya sabes lo que hay dentro.
+
+---
+Aplicación no oficial de carácter recreativo. El contenido audiovisual pertenece a sus respectivos propietarios.
+
+========================================
+NOTAS PARA EL RESTO DE CAMPOS
+========================================
+- Icono: usar ficha_play/icono_512.png (ya cumple 512x512 PNG)
+- Banner (gráfico de funciones): ficha_play/banner_1024x500.png
+- Capturas: mínimo 2, sácalas del emulador (pantalla principal y la del vídeo).
+  En el emulador: botón de cámara del panel lateral. Resolución mínima 320px,
+  máxima 3840px, proporción máx. 2:1.
+- Categoría sugerida: Entretenimiento (o Música y audio)
+- Etiquetas: evita términos tipo "niños" / "kids" (coherente con el público 13+)
+- Correo de contacto: el que uses en Play Console
+- URL política de privacidad: la de GitHub Pages

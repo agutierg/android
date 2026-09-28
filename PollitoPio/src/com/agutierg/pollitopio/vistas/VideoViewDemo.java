@@ -1,47 +1,34 @@
-/**
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements. See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership. The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License. You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.agutierg.pollitopio.vistas;
 
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.VideoView;
 
+import com.agutierg.pollitopio.BuildConfig;
 import com.agutierg.pollitopio.R;
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 public class VideoViewDemo extends Activity {
 	private static final String TAG = "VideoViewDemo";
+
+	// En debug se usan anuncios de prueba; en release, el bloque real "Pollito pio"
+	private static final String BANNER_AD_UNIT_ID = BuildConfig.DEBUG
+			? "ca-app-pub-3940256099942544/6300978111"
+			: "ca-app-pub-3391184176179743/1249072833";
 
 	private VideoView mVideoView;
 	private ImageButton mPlay;
 	private ImageButton mPause;
 	private ImageButton mReset;
 	private ImageButton mStop;
-	private String current;
 
 	private LinearLayout llPlayer;
 	private AdView adView;
@@ -52,15 +39,13 @@ public class VideoViewDemo extends Activity {
 		setContentView(R.layout.ejemplo);
 
 		llPlayer = (LinearLayout) findViewById(R.id.llPlayer);
-		// Crear la adView
-		adView = new AdView(this, AdSize.BANNER, "a1515dad15d68b1");
-		adView.setGravity(Gravity.CENTER);
 
-		// Añadirle la adView
+		// Crear la adView con el SDK moderno
+		adView = new AdView(this);
+		adView.setAdSize(AdSize.BANNER);
+		adView.setAdUnitId(BANNER_AD_UNIT_ID);
 		llPlayer.addView(adView);
-
-		// Iniciar una solicitud genérica para cargarla con un anuncio
-		adView.loadAd(new AdRequest());
+		adView.loadAd(new AdRequest.Builder().build());
 
 		mVideoView = (VideoView) findViewById(R.id.surface_view);
 
@@ -71,52 +56,71 @@ public class VideoViewDemo extends Activity {
 
 		mPlay.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				playVideo();
+				mVideoView.start();
 			}
 		});
 		mPause.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				if (mVideoView != null) {
+				if (mVideoView.isPlaying()) {
 					mVideoView.pause();
 				}
 			}
 		});
 		mReset.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				if (mVideoView != null) {
-					mVideoView.seekTo(0);
-				}
+				// Reiniciar desde el principio y reproducir
+				mVideoView.seekTo(0);
+				mVideoView.start();
 			}
 		});
 		mStop.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				if (mVideoView != null) {
-					current = null;
-					mVideoView.stopPlayback();
-				}
+				// Cerrar el reproductor y volver a la pantalla principal
+				mVideoView.stopPlayback();
+				finish();
 			}
 		});
-		runOnUiThread(new Runnable() {
-			public void run() {
-				playVideo();
 
-			}
-
-		});
+		prepararVideo();
+		mVideoView.start();
 	}
 
-	private void playVideo() {
+	private void prepararVideo() {
 		try {
-			mVideoView.setVideoURI(Uri
-					.parse("android.resource://com.agutierg.pollitopio/"
-							+ R.raw.pio));
-			mVideoView.start();
+			mVideoView.setVideoURI(Uri.parse("android.resource://"
+					+ getPackageName() + "/" + R.raw.pio));
+			// Repetir el vÃ­deo automÃ¡ticamente al terminar
+			mVideoView.setOnPreparedListener(mp -> mp.setLooping(true));
 			mVideoView.requestFocus();
 		} catch (Exception e) {
 			Log.e(TAG, "error: " + e.getMessage(), e);
-			if (mVideoView != null) {
-				mVideoView.stopPlayback();
-			}
 		}
+	}
+
+	@Override
+	protected void onPause() {
+		if (adView != null) {
+			adView.pause();
+		}
+		if (mVideoView != null && mVideoView.isPlaying()) {
+			mVideoView.pause();
+		}
+		super.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		if (adView != null) {
+			adView.resume();
+		}
+	}
+
+	@Override
+	protected void onDestroy() {
+		if (adView != null) {
+			adView.destroy();
+		}
+		super.onDestroy();
 	}
 }

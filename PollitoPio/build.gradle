@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application' version '9.3.1'
+}
+
+android {
+    namespace 'com.agutierg.pollitopio'
+    compileSdk 36
+
+    defaultConfig {
+        // Paquete nuevo: se publica como app nueva (el keystore de la antigua se perdió)
+        applicationId "com.agutierg.pollitopiooffline"
+        minSdk 23
+        targetSdk 36
+        versionCode 5
+        versionName "2.2"
+    }
+
+    // Se mantiene la estructura de carpetas original del proyecto Eclipse
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('/keystore/gutsapps.jks')
+            keyAlias 'gutsapps'
+            if (System.console() != null) {
+                storePassword = new String(System.console().readPassword("\nKeystore password: "))
+                keyPassword = new String(System.console().readPassword("\nKey password: "))
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    // SDK moderno de AdMob (sustituye al antiguo GoogleAdMobAdsSdk jar)
+    implementation 'com.google.android.gms:play-services-ads:23.6.0'
+    // Plataforma de mensajes de usuario (consentimiento GDPR, obligatorio en la UE)
+    implementation 'com.google.android.ump:user-messaging-platform:3.1.0'
+    // API oficial de valoración dentro de la app (In-App Review)
+    implementation 'com.google.android.play:review:2.0.2'
+    implementation 'androidx.annotation:annotation:1.9.1'
+}

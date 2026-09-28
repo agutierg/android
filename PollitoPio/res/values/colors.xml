@@ -11,5 +11,12 @@
     <color name="image_border_end">#FF660000</color>
     <color name="image_border_center">#FFFF3333</color>
     <color name="granate">#8A0808</color>
-   
+
+    <!-- Paleta moderna -->
+    <color name="rojo_pio">#E53935</color>
+    <color name="rojo_pio_oscuro">#B71C1C</color>
+    <color name="amarillo_pio">#FFC107</color>
+    <color name="fondo_oscuro">#121212</color>
+    <color name="control_bg">#33FFFFFF</color>
+
 </resources>

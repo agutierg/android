@@ -1,12 +1,23 @@
 <resources>
 
-    <string name="app_name">Pollito Pio</string>
+    <string name="app_name">Pollito Pio Offline</string>
     
     <string name="play">PLAY</string>
     <string name="share">SHARE</string>
-    <string name="more">GET RINGTONE</string>
     
     <string name="wallpaper">SET WALLPAPER</string>
     <string name="wall">WALLPAPER</string>
+
+    <string name="ringtone">TONO DE LLAMADA</string>
+    <string name="tono_ok">¡Pollito Pío es ahora tu tono de llamada!</string>
+    <string name="tono_error">No se pudo establecer el tono</string>
+    <string name="tono_permiso">Activa el permiso para modificar ajustes y vuelve a pulsar el botón</string>
+    <string name="tono_no_disponible">Necesita Android 10 o superior</string>
+
+    <string name="pequeletras">PRUEBA PEQUELETRAS</string>
+
+    <string name="pause">PAUSE</string>
+    <string name="reset">RESET</string>
+    <string name="stop">STOP</string>
 
 </resources>

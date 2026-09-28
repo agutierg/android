@@ -4,115 +4,106 @@ import java.io.IOException;
 
 import android.app.Activity;
 import android.app.WallpaperManager;
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
+
+import com.agutierg.pollitopio.BuildConfig;
 import com.agutierg.pollitopio.R;
-import com.google.ads.Ad;
-import com.google.ads.AdListener;
-import com.google.ads.AdRequest;
-import com.google.ads.AdRequest.ErrorCode;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
-import com.google.ads.InterstitialAd;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
-public class SetWallpaper extends Activity implements AdListener {
-	Bitmap bitmap;
-	int lastImageRef;
+public class SetWallpaper extends Activity {
 
-	private InterstitialAd interstitial;
-	private Activity actividad;
+	// En debug se usan anuncios de prueba; en release, el bloque real "Pollito pio"
+	// (bloque antiguo de tipo dual: sirve banner e intersticial)
+	private static final String BANNER_AD_UNIT_ID = BuildConfig.DEBUG
+			? "ca-app-pub-3940256099942544/6300978111"
+			: "ca-app-pub-3391184176179743/1249072833";
+	private static final String INTERSTITIAL_AD_UNIT_ID = BuildConfig.DEBUG
+			? "ca-app-pub-3940256099942544/1033173712"
+			: "ca-app-pub-3391184176179743/3153181446";
 
 	private LinearLayout llWallpaper;
 	private AdView adView;
 
-	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_wallpaper);
 
 		llWallpaper = (LinearLayout) findViewById(R.id.llWallpaper);
-		// Crear la adView
-		adView = new AdView(this, AdSize.BANNER, "a1515dad15d68b1");
-		adView.setGravity(Gravity.CENTER);
 
-		// Añadirle la adView
+		// Banner con el SDK moderno
+		adView = new AdView(this);
+		adView.setAdSize(AdSize.BANNER);
+		adView.setAdUnitId(BANNER_AD_UNIT_ID);
 		llWallpaper.addView(adView);
-
-		// Iniciar una solicitud genérica para cargarla con un anuncio
-		adView.loadAd(new AdRequest());
+		adView.loadAd(new AdRequest.Builder().build());
 
 		Button buttonSetWallpaper = (Button) findViewById(R.id.btnWall);
 		ImageView imagePreview = (ImageView) findViewById(R.id.ivWall);
 		imagePreview.setImageResource(R.drawable.wall);
 
-		actividad = this;
-
 		buttonSetWallpaper.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
 				WallpaperManager myWallpaperManager = WallpaperManager
 						.getInstance(getApplicationContext());
 				try {
 					myWallpaperManager.setResource(R.drawable.wall);
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 
-				// Create the interstitial
-				interstitial = new InterstitialAd(actividad, "a1515dad15d68b1");
+				// Intersticial con el SDK moderno: se carga y se muestra al estar listo
+				InterstitialAd.load(SetWallpaper.this, INTERSTITIAL_AD_UNIT_ID,
+						new AdRequest.Builder().build(),
+						new InterstitialAdLoadCallback() {
+							@Override
+							public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+								interstitialAd.show(SetWallpaper.this);
+								finish();
+							}
 
-				// Create ad request
-				AdRequest adRequest = new AdRequest();
-
-				// Begin loading your interstitial
-				interstitial.loadAd(adRequest);
-
-				// Set Ad Listener to use the callbacks below
-				interstitial.setAdListener((AdListener) actividad);
-
-				finish();
+							@Override
+							public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+								finish();
+							}
+						});
 			}
 		});
 	}
 
 	@Override
-	public void onDismissScreen(Ad arg0) {
-		// TODO Auto-generated method stub
-
+	protected void onPause() {
+		if (adView != null) {
+			adView.pause();
+		}
+		super.onPause();
 	}
 
 	@Override
-	public void onFailedToReceiveAd(Ad arg0, ErrorCode arg1) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void onLeaveApplication(Ad arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void onPresentScreen(Ad ad) {
-		if (ad == interstitial) {
-			interstitial.show();
+	protected void onResume() {
+		super.onResume();
+		if (adView != null) {
+			adView.resume();
 		}
 	}
 
 	@Override
-	public void onReceiveAd(Ad ad) {
-		if (ad == interstitial) {
-			interstitial.show();
+	protected void onDestroy() {
+		if (adView != null) {
+			adView.destroy();
 		}
+		super.onDestroy();
 	}
 }
